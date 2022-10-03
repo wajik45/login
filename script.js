@@ -25,7 +25,7 @@ btnRegister.addEventListener('click', function () {
         rUsername.style.borderColor = 'red';
         rPassword.style.borderColor = 'red';
         namaLengkap.style.borderColor = 'red';
-    } else if (rUsername.value.length > 16 || rPassword.value.length > 16 || namaLengkap.value.length > 16) {
+    } else if (rUsername.value.length > 16 || rPassword.value.length > 16 || namaLengkap.value.length > 32) {
         alert('kebanyakan deck');
 
         rUsername.style.borderColor = 'red';
