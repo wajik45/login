@@ -1,0 +1,149 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* pas login */
+
+.container {
+    height: 100vh;
+    background-color: #333;
+    display: none;
+}
+
+.nav {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.nav-dua {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #ddd;
+}
+
+.nav button {
+    padding: 2px 4px;
+}
+
+.bulet {
+    width: 40px;
+    height: 40px;
+    background-color: #777;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #555;
+    padding: 2px;
+}
+
+.bulet .satu {
+    width: 40%;
+    height: 40%;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.bulet .dua {
+    width: 80%;
+    height: 80%;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.kartu {
+    color: #ddd;
+    margin: auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px #555;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* log in */
+
+.container-dua {
+    height: 100vh;
+    background-image: url(https://images7.alphacoders.com/410/410339.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px #555;
+    font-size: .9rem;
+}
+
+.kotak label,
+.kotak input {
+    margin-bottom: 20px;
+    ;
+}
+
+.kotak button {
+    width: 50%;
+    align-self: flex-end;
+    padding: 2px 4px;
+}
+
+.kotak span {
+    cursor: pointer;
+}
+
+.kotak span:hover {
+    color: #ddd;
+}
+
+.kotak .reg {
+    color: rgb(31, 182, 31);
+    width: 40%;
+}
+
+.kotak .close {
+    width: 40%;
+    color: rgb(213, 73, 73);
+}
+
+/* register */
+
+.kotak.dua {
+    position: absolute;
+    transform: scale(0);
+    transition: .3s;
+    background-color: black;
+}
